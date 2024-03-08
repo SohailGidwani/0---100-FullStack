@@ -14,6 +14,9 @@ export const Publish = () =>{
             <Appbar/>
             <div className="flex justify-center w-full pt-5 px-2">
                     <div className="max-w-screen-lg w-full">
+                    <div className="text-4xl font-extrabold pb-4">
+                                Create a new Blog here...
+                            </div>
                         <input onChange={(e)=>{
                             setTitle(e.target.value);
                         }} type="text"className="bg-gray-50 text-gray-900 text-sm rounded-lg block w-full p-2.5 focus:outline-none" placeholder="Title goes here...." required/>
