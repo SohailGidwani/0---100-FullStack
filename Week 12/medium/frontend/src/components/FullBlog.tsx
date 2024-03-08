@@ -1,11 +1,11 @@
 import { Appbar } from "./Appbar"
-import { BlogTypes } from "../hooks"
+// import { BlogTypes } from "../hooks"
 import { Avatar } from "./BlogCard"
 import { useBlogs } from "../hooks"
 import { BlogSkeleton } from "./BlogSkeleton"
 
-export const FullBlog = ({ blog }:{blog:BlogTypes}) =>{
-    const { loading, blogs } = useBlogs();
+export const FullBlog = ({ blog }:{blog: any}) =>{
+    const { loading } = useBlogs();
     if (loading) {
         return <div>
         <Appbar></Appbar>
